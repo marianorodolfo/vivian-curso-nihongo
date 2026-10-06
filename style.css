@@ -309,6 +309,20 @@ body {
     box-shadow: 0 8px 24px rgba(121, 28, 48, 0.15);
 }
 
+/* Hover na capa do vídeo */
+.hero-media > img {
+    transition:
+        filter 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+@media (hover: hover) {
+    .hero-media:hover > img {
+        filter: brightness(1.05);
+        box-shadow: 0 12px 30px rgba(121, 28, 48, 0.25);
+    }
+}
+
 @media (min-width: 901px) {
     .hero-media {
         width: 580px;
